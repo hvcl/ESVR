@@ -55,14 +55,15 @@ DATASET_CONFIGS = {
     "hemibrain_vDeltaA": {
         "training_mode": "chunk_parallel",
         "path": "/home/Alexandrite/yjkim/repos/gaussian-splatting-smin/data/vis/hemibrain_vDeltaA_n85_mip2_4072x4372x4171.raw",
-        "x_voxel_size": 4372,
+        "x_voxel_size": 4372, # xyz for training
         "y_voxel_size": 4072,
         "z_voxel_size": 4171,
-        "raw_shape": (4372, 4072, 4171), # need xy swap
+        "raw_shape": (4171, 4372, 4072), # need xy swap
+        "axis_order": (1,2,0),
         "chunk_size": (1093, 1018, 1043),
         "chunk_len": 0.5,
         "use_tif": False,
-        "transpose": False,
+        "transpose": True,
     },
     "hemibrain_lLN2P": {
         "training_mode": "chunk_parallel",

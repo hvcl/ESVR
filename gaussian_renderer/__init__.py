@@ -12,8 +12,6 @@
 import torch
 import math
 from gaussian_rasterization_voxelization import (
-    GaussianRasterizationSettings,
-    GaussianRasterizer,
     GaussianVoxelizationSettings,
     GaussianVoxelizer,
     GaussianVoxelizer_Count,
