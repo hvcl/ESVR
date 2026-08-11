@@ -154,10 +154,26 @@ The Viewer was tested with:
 - **Conda:** 25.11.1
 - **Build configuration:** `RelWithDebInfo` (x64)
 
-### Pre-built Viewer
+### Interactive GUI
 
 A pre-built Viewer executable is included in `SIBR_viewer/install/bin`, so you
 can run the Viewer directly without building it from source.
+
+Launch the Viewer from the `SIBR_viewer/install/bin` directory and
+specify the model output directory with `-m`:
+
+```bash
+cd SIBR_viewer/install/bin
+SIBR_gaussianViewer_app_rwdi.exe -m <output_path>
+```
+
+Transfer Function Controls
+
+- **Left-click** on the transfer function to add a control point at the cursor position.
+- **Right-click** a control point to delete it.
+- **Middle-click** a control point to change its color.
+
+
 
 ### Optional: Build from Source
 
@@ -169,19 +185,3 @@ cd SIBR_viewer
 cmake -S . -B build
 cmake --build build --target install --config RelWithDebInfo
 ```
-
-### Interactive GUI
-
-Launch the pre-built Viewer from the `SIBR_viewer/install/bin` directory and
-specify the model output directory with `-m`:
-
-```bash
-cd SIBR_viewer/install/bin
-SIBR_gaussianViewer_app_rwdi.exe -m <output_path>
-```
-
-#### Transfer Function Controls
-
-- **Left-click** on the transfer function to add a control point at the cursor position.
-- **Right-click** a control point to delete it.
-- **Middle-click** a control point to change its color.
