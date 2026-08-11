@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FF6673B-D4F3-390C-A8C5-90E1DA6B2DBE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>sibr_renderer_install</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.8.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glew\glew-2.0.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\assimp\Assimp-4.1.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\bin\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\doc\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\examples\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\lib\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\presets\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\embree3\embree-3.6.1.x64.vc14.windows\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\eigen3\eigen\include;\usr\include\eigen3;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nativefiledialog\nfd\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\opencv\install\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glfw\glfw-3.2.1\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas\source\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\src\.;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glew\glew-2.0.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\assimp\Assimp-4.1.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\bin\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\doc\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\examples\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\lib\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\presets\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\embree3\embree-3.6.1.x64.vc14.windows\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\eigen3\eigen\include;\usr\include\eigen3;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nativefiledialog\nfd\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\opencv\install\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glfw\glfw-3.2.1\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas\source\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\src\.;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glew\glew-2.0.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\assimp\Assimp-4.1.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\bin\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\doc\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\examples\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\lib\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\presets\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\embree3\embree-3.6.1.x64.vc14.windows\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\eigen3\eigen\include;\usr\include\eigen3;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nativefiledialog\nfd\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\opencv\install\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glfw\glfw-3.2.1\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas\source\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\src\.;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\CMakeFiles\983619e8ab286f0bf25a312095af875a\sibr_renderer_install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">run the installation only for sibr_renderer</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -DCOMPONENT=sibr_renderer_install -P C:/Users/user/gaussian-splatting/SIBR_viewers/cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\AddShadowRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\AddShadowRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BinaryMeshRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BinaryMeshRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BlurRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BlurRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ColoredMeshRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ColoredMeshRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\Config.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CopyRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CopyRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\DepthRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\DepthRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\NormalRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\NormalRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PointBasedRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PointBasedRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PoissonRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PoissonRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PositionRender.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PositionRender.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\RenderMaskHolder.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\RenderMaskHolder.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ShadowMapRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ShadowMapRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\TexturedMeshRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\TexturedMeshRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\addshadow.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\blur.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\colored_mesh.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\colored_mesh.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\copy.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\copy_depth.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\depthRenderer.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\depthRenderer.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\emotive_relight.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\emotive_relight.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\hdrEnvMap.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\hdrEnvMap.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlat.gp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlat.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlatColor.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlatDepth.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\noproj.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRenderer.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRenderer.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRendererGen.gp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRendererGen.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_diverg.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_interp.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_jacobi.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_restrict.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionReflectedDirRenderer.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionReflectedDirRenderer.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionRenderer.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionRenderer.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\shadowMapRenderer.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\shadowMapRenderer.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture-invert.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh_flipY.vert;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\sibr_renderer_install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">run the installation only for sibr_renderer</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -DCOMPONENT=sibr_renderer_install -P C:/Users/user/gaussian-splatting/SIBR_viewers/cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\AddShadowRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\AddShadowRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BinaryMeshRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BinaryMeshRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BlurRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BlurRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ColoredMeshRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ColoredMeshRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\Config.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CopyRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CopyRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\DepthRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\DepthRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\NormalRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\NormalRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PointBasedRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PointBasedRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PoissonRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PoissonRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PositionRender.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PositionRender.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\RenderMaskHolder.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\RenderMaskHolder.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ShadowMapRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ShadowMapRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\TexturedMeshRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\TexturedMeshRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\addshadow.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\blur.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\colored_mesh.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\colored_mesh.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\copy.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\copy_depth.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\depthRenderer.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\depthRenderer.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\emotive_relight.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\emotive_relight.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\hdrEnvMap.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\hdrEnvMap.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlat.gp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlat.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlatColor.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlatDepth.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\noproj.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRenderer.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRenderer.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRendererGen.gp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRendererGen.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_diverg.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_interp.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_jacobi.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_restrict.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionReflectedDirRenderer.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionReflectedDirRenderer.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionRenderer.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionRenderer.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\shadowMapRenderer.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\shadowMapRenderer.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture-invert.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh_flipY.vert;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\sibr_renderer_install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">run the installation only for sibr_renderer</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -DCOMPONENT=sibr_renderer_install -P C:/Users/user/gaussian-splatting/SIBR_viewers/cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\AddShadowRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\AddShadowRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BinaryMeshRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BinaryMeshRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BlurRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BlurRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ColoredMeshRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ColoredMeshRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\Config.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CopyRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CopyRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\DepthRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\DepthRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\NormalRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\NormalRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PointBasedRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PointBasedRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PoissonRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PoissonRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PositionRender.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PositionRender.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\RenderMaskHolder.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\RenderMaskHolder.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ShadowMapRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ShadowMapRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\TexturedMeshRenderer.cpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\TexturedMeshRenderer.hpp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\addshadow.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\blur.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\colored_mesh.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\colored_mesh.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\copy.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\copy_depth.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\depthRenderer.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\depthRenderer.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\emotive_relight.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\emotive_relight.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\hdrEnvMap.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\hdrEnvMap.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlat.gp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlat.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlatColor.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlatDepth.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\noproj.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRenderer.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRenderer.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRendererGen.gp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRendererGen.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_diverg.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_interp.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_jacobi.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_restrict.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionReflectedDirRenderer.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionReflectedDirRenderer.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionRenderer.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionRenderer.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\shadowMapRenderer.fp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\shadowMapRenderer.vp;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture-invert.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh.frag;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh.vert;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh_flipY.vert;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\sibr_renderer_install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/user/gaussian-splatting/SIBR_viewers -BC:/Users/user/gaussian-splatting/SIBR_viewers --check-stamp-file C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\cmake\windows\install_runtime.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/user/gaussian-splatting/SIBR_viewers -BC:/Users/user/gaussian-splatting/SIBR_viewers --check-stamp-file C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\cmake\windows\install_runtime.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/user/gaussian-splatting/SIBR_viewers -BC:/Users/user/gaussian-splatting/SIBR_viewers --check-stamp-file C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\cmake\windows\install_runtime.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\sibr_renderer_install">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\user\gaussian-splatting\SIBR_viewers\ZERO_CHECK.vcxproj">
+      <Project>{E721768C-2222-33E3-B694-AE708D4BB5B9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\sibr_renderer.vcxproj">
+      <Project>{3EEC40DE-9CDD-3902-8965-D4D93FA775D9}</Project>
+      <Name>sibr_renderer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.8.targets" />
+  </ImportGroup>
+</Project>

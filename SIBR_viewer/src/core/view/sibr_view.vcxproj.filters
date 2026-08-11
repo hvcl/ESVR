@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\DatasetView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\FPSCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\FPSCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\IBRBasicUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\ICameraHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\ImageView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\ImagesGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\InteractiveCameraHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\MultiMeshManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\MultiViewManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\Orbit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\RenderingMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\SceneDebugView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\Skybox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\TrackBall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\UIShortcuts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\ViewBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\interface\Interface.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\interface\InterfaceUtils.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\interface\MeshViewer.cpp">
+      <Filter>Source Files\interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\Config.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\DatasetView.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\FPSCamera.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\FPSCounter.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\IBRBasicUtils.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\ICameraHandler.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\ImageView.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\ImagesGrid.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\InteractiveCameraHandler.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\MultiMeshManager.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\MultiViewManager.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\Orbit.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\RenderingMode.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\SceneDebugView.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\Skybox.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\TrackBall.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\UIShortcuts.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\ViewBase.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\interface\Interface.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\interface\InterfaceUtils.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\interface\MeshViewer.h">
+      <Filter>Source Files\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson\picojson.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_iterators.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_print.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann\nanoflann\nanoflann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_colored_mesh.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_colored_mesh.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_colored_per_triangle_normals.geom">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_colored_per_triangle_normals.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_colored_per_vertex_normals.geom">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_colored_per_vertex_normals.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_points.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_points.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_uv_tex.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alpha_uv_tex_array.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alphaimgview.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\alphaimgview.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\anaglyph.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\anaglyph.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\axisgizmo.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\axisgizmo.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\camstub.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\camstub.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\depth.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\depth.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\depthonly.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\depthonly.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\image_viewer.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\image_viewer.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\mesh_color.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\mesh_color.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\mesh_debugview.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\mesh_debugview.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\mesh_normal.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\mesh_normal.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\number.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\number.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\skybox.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\skybox.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\text-imgui.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\text-imgui.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\texture.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\texture.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\topview.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\topview.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\view\shaders\uv_mesh.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3C854FD6-A420-3845-8BBF-B3D27C14BA3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6F6073A1-71C4-379D-9030-732EDBBCB313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interface">
+      <UniqueIdentifier>{88850834-B069-3BCC-9236-68AADEF7F70D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders">
+      <UniqueIdentifier>{BFC079A7-0D98-3749-A08D-AE24F503EEFD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

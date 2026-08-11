@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\AddShadowRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BinaryMeshRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BlurRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ColoredMeshRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CopyRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\DepthRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\NormalRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PointBasedRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PoissonRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PositionRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\RenderMaskHolder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ShadowMapRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\TexturedMeshRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\AddShadowRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BinaryMeshRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\BlurRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ColoredMeshRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\Config.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CopyRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\DepthRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\NormalRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PointBasedRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PoissonRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\PositionRender.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\RenderMaskHolder.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\ShadowMapRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\TexturedMeshRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson\picojson.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_iterators.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_print.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann\nanoflann\nanoflann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\addshadow.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\blur.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\colored_mesh.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\colored_mesh.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\copy.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\copy_depth.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\depthRenderer.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\depthRenderer.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\emotive_relight.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\emotive_relight.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\hdrEnvMap.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\hdrEnvMap.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlat.gp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlat.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlatColor.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\longlatDepth.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\noproj.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRenderer.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRenderer.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRendererGen.gp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\normalRendererGen.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_diverg.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_interp.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_jacobi.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\poisson_restrict.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionReflectedDirRenderer.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionReflectedDirRenderer.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionRenderer.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\positionRenderer.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\shadowMapRenderer.fp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\shadowMapRenderer.vp">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture-invert.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\texture.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\shaders\textured_mesh_flipY.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3C854FD6-A420-3845-8BBF-B3D27C14BA3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6F6073A1-71C4-379D-9030-732EDBBCB313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders">
+      <UniqueIdentifier>{BFC079A7-0D98-3749-A08D-AE24F503EEFD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

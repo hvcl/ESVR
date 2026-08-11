@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\CMakeFiles\a8475448608d33c0455bd240a37a3cfa\sibr_basic_all_install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\basic\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\basic\CMakeFiles\sibr_basic_all_install" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CE9036A9-F835-3C3B-931F-5BD455BE797D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

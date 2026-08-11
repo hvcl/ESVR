@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/user/anaconda3/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/InstallRequiredSystemLibraries.cmake
+C:/Users/user/gaussian-splatting/SIBR_viewers/cmake/windows/MSVCsetUserCommand.cmake
+C:/Users/user/gaussian-splatting/SIBR_viewers/cmake/windows/install_runtime.cmake
+C:/Users/user/gaussian-splatting/SIBR_viewers/cmake/windows/parse_arguments_multi.cmake
+C:/Users/user/gaussian-splatting/SIBR_viewers/src/projects/basic/apps/texturedMesh/CMakeLists.txt

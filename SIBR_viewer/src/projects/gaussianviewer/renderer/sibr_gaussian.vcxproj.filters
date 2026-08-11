@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\GaussianSurfaceRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\GaussianView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\Config.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\GaussianSurfaceRenderer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\GaussianView.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\tfeditor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\tfeditor2D.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\tfeditorClustered.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\tfeditorClustering.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\tfeditorGLFW.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\tfeditorGUI.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\tfeditorGUI_1D.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\tftemp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson\picojson.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_iterators.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_print.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann\nanoflann\nanoflann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\shaders\copy.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\shaders\copy.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\shaders\gaussian_surface.frag">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\gaussianviewer\renderer\shaders\gaussian_surface.vert">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3C854FD6-A420-3845-8BBF-B3D27C14BA3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6F6073A1-71C4-379D-9030-732EDBBCB313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders">
+      <UniqueIdentifier>{BFC079A7-0D98-3749-A08D-AE24F503EEFD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

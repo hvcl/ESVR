@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/user/anaconda3/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/FindCUDAToolkit.cmake
+C:/Users/user/anaconda3/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+C:/Users/user/anaconda3/Lib/site-packages/cmake/data/share/cmake-3.30/Modules/FindPackageMessage.cmake
+C:/Users/user/gaussian-splatting/SIBR_viewers/cmake/windows/install_runtime.cmake
+C:/Users/user/gaussian-splatting/SIBR_viewers/src/projects/gaussianviewer/renderer/CMakeLists.txt

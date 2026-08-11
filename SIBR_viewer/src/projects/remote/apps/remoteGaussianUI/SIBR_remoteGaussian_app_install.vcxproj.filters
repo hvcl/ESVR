@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\CMakeFiles\bb402a7bb235f5da6fe0ae4912bcb724\SIBR_remoteGaussian_app_install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\remote\apps\remoteGaussianUI\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\projects\remote\apps\remoteGaussianUI\CMakeFiles\SIBR_remoteGaussian_app_install" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CE9036A9-F835-3C3B-931F-5BD455BE797D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

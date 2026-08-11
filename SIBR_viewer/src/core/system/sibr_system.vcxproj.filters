@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\ByteStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\CommandLineArgs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\LoadingProgress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Quaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\ThreadIdWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\VectorUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\XMLTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Array2d.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\ByteStream.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\CommandLineArgs.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Config.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\LoadingProgress.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\MD5.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Matrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\MatrixBasePlugin.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\MatrixPlugin.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Quaternion.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Rect.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\SimpleTimer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\String.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\ThreadIdWorker.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Transform3.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Utils.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\Vector.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\VectorUtils.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\XMLTree.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson\picojson.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_iterators.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_print.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml\rapidxml_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\system\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3C854FD6-A420-3845-8BBF-B3D27C14BA3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6F6073A1-71C4-379D-9030-732EDBBCB313}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

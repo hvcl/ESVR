@@ -1,0 +1,3152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{04ABA5DC-A2A2-3011-B7A9-8B2995DEC527}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>sibr_renderer_shaders</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.8.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glew\glew-2.0.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\assimp\Assimp-4.1.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\bin\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\doc\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\examples\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\lib\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\presets\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\embree3\embree-3.6.1.x64.vc14.windows\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\eigen3\eigen\include;\usr\include\eigen3;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nativefiledialog\nfd\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\opencv\install\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glfw\glfw-3.2.1\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas\source\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\src\.;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																																																																																																														</Message>
+      <Command>setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/addshadow.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/addshadow.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/addshadow.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/addshadow.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/addshadow.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/addshadow.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/blur.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/blur.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/blur.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/blur.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/blur.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/blur.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy_depth.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy_depth.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy_depth.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy_depth.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy_depth.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy_depth.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatColor.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatColor.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatColor.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatColor.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatColor.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatColor.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatDepth.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatDepth.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatDepth.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatDepth.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatDepth.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatDepth.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/noproj.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/noproj.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/noproj.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/noproj.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/noproj.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/noproj.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_diverg.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_diverg.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_diverg.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_diverg.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_diverg.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_diverg.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_interp.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_interp.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_interp.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_interp.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_interp.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_interp.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_jacobi.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_jacobi.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_jacobi.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_jacobi.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_jacobi.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_jacobi.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_restrict.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_restrict.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_restrict.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_restrict.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_restrict.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_restrict.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture-invert.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture-invert.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture-invert.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture-invert.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture-invert.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture-invert.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh_flipY.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh_flipY.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh_flipY.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh_flipY.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh_flipY.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh_flipY.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glew\glew-2.0.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\assimp\Assimp-4.1.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\bin\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\doc\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\examples\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\lib\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\presets\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\embree3\embree-3.6.1.x64.vc14.windows\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\eigen3\eigen\include;\usr\include\eigen3;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nativefiledialog\nfd\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\opencv\install\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glfw\glfw-3.2.1\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas\source\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\src\.;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																																																																																																														</Message>
+      <Command>setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/addshadow.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/addshadow.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/addshadow.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/addshadow.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/addshadow.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/addshadow.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/blur.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/blur.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/blur.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/blur.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/blur.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/blur.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy_depth.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy_depth.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy_depth.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy_depth.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy_depth.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy_depth.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatColor.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatColor.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatColor.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatColor.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatColor.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatColor.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatDepth.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatDepth.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatDepth.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatDepth.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatDepth.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatDepth.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/noproj.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/noproj.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/noproj.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/noproj.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/noproj.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/noproj.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_diverg.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_diverg.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_diverg.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_diverg.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_diverg.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_diverg.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_interp.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_interp.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_interp.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_interp.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_interp.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_interp.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_jacobi.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_jacobi.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_jacobi.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_jacobi.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_jacobi.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_jacobi.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_restrict.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_restrict.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_restrict.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_restrict.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_restrict.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_restrict.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture-invert.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture-invert.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture-invert.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture-invert.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture-invert.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture-invert.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh_flipY.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh_flipY.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh_flipY.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh_flipY.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh_flipY.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh_flipY.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glew\glew-2.0.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\assimp\Assimp-4.1.0\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\bin\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\doc\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\examples\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\lib\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\presets\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\ffmpeg\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\embree3\embree-3.6.1.x64.vc14.windows\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\eigen3\eigen\include;\usr\include\eigen3;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\boost\boost-1.71;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nativefiledialog\nfd\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\opencv\install\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\glfw\glfw-3.2.1\include;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\imgui\imgui;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\mrf\mrf;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\nanoflann\nanoflann;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\picojson\picojson;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\rapidxml\rapidxml;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\extlibs\xatlas\xatlas\source\xatlas;C:\Users\user\gaussian-splatting\SIBR_viewers\src\.;C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																																																																																																														</Message>
+      <Command>setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/addshadow.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/addshadow.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/addshadow.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/addshadow.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/addshadow.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/addshadow.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/blur.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/blur.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/blur.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/blur.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/blur.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/blur.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/colored_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/colored_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy_depth.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy_depth.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy_depth.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy_depth.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/copy_depth.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/copy_depth.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/depthRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/depthRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/emotive_relight.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/emotive_relight.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/hdrEnvMap.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/hdrEnvMap.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlat.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlat.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatColor.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatColor.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatColor.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatColor.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatColor.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatColor.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatDepth.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatDepth.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatDepth.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatDepth.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/longlatDepth.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/longlatDepth.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/noproj.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/noproj.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/noproj.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/noproj.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/noproj.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/noproj.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.gp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.gp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/normalRendererGen.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/normalRendererGen.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_diverg.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_diverg.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_diverg.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_diverg.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_diverg.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_diverg.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_interp.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_interp.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_interp.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_interp.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_interp.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_interp.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_jacobi.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_jacobi.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_jacobi.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_jacobi.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_jacobi.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_jacobi.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_restrict.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_restrict.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_restrict.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_restrict.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/poisson_restrict.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/poisson_restrict.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionReflectedDirRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionReflectedDirRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/positionRenderer.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/positionRenderer.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.fp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.fp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/shadowMapRenderer.vp C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/shadowMapRenderer.vp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture-invert.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture-invert.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture-invert.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture-invert.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture-invert.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture-invert.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/texture.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/texture.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.frag C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.frag
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh_flipY.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh_flipY.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh_flipY.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh_flipY.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E copy_if_different C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/shaders/textured_mesh_flipY.vert C:/Users/user/gaussian-splatting/SIBR_viewers/install/shaders/core/textured_mesh_flipY.vert
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/user/gaussian-splatting/SIBR_viewers -BC:/Users/user/gaussian-splatting/SIBR_viewers --check-stamp-file C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\cmake\windows\install_runtime.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/user/gaussian-splatting/SIBR_viewers -BC:/Users/user/gaussian-splatting/SIBR_viewers --check-stamp-file C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\cmake\windows\install_runtime.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\user\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/user/gaussian-splatting/SIBR_viewers -BC:/Users/user/gaussian-splatting/SIBR_viewers --check-stamp-file C:/Users/user/gaussian-splatting/SIBR_viewers/src/core/renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\cmake\windows\install_runtime.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\user\gaussian-splatting\SIBR_viewers\src\core\renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\user\gaussian-splatting\SIBR_viewers\ZERO_CHECK.vcxproj">
+      <Project>{E721768C-2222-33E3-B694-AE708D4BB5B9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.8.targets" />
+  </ImportGroup>
+</Project>

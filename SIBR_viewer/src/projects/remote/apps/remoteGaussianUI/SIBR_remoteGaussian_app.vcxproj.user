@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommand>C:/Users/user/gaussian-splatting/SIBR_viewers/install/bin\$(TargetFileName)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+	<LocalDebuggerWorkingDirectory>C:\Users\user\gaussian-splatting\SIBR_viewers\install\bin</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommand>C:/Users/user/gaussian-splatting/SIBR_viewers/install/bin\$(TargetFileName)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory>C:\Users\user\gaussian-splatting\SIBR_viewers\install\bin</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <LocalDebuggerCommand>C:/Users/user/gaussian-splatting/SIBR_viewers/install/bin\$(TargetFileName)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory>C:\Users\user\gaussian-splatting\SIBR_viewers\install\bin</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <LocalDebuggerCommand>C:/Users/user/gaussian-splatting/SIBR_viewers/install/bin\$(TargetFileName)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory>C:\Users\user\gaussian-splatting\SIBR_viewers\install\bin</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+</Project>
