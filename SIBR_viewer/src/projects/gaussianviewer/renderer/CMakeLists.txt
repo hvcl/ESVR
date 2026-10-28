@@ -10,10 +10,14 @@
 set(SIBR_PROJECT "gaussian")
 project(sibr_${SIBR_PROJECT} LANGUAGES CXX)
 
-sibr_gitlibrary(TARGET CudaRasterizer
-    GIT_REPOSITORY 	"https://github.com/graphdeco-inria/diff-gaussian-rasterization.git"
-    GIT_TAG			"3509be80f83ee30599b23bb3542d45aea2174a03"
-)
+# Use the modified rasterizer sources bundled with ESVR.
+set(CUDA_RASTERIZER_SOURCE_DIR "${CMAKE_SOURCE_DIR}/extlibs/CudaRasterizer/CudaRasterizer")
+add_subdirectory("${CUDA_RASTERIZER_SOURCE_DIR}"
+    "${CMAKE_BINARY_DIR}/extlibs/CudaRasterizer/build")
+set_target_properties(CudaRasterizer PROPERTIES FOLDER "extlibs")
+ibr_install_target(CudaRasterizer COMPONENT CudaRasterizer_install)
+include_directories("${CMAKE_SOURCE_DIR}/extlibs/CudaRasterizer"
+    "${CUDA_RASTERIZER_SOURCE_DIR}")
 
 find_package(CUDAToolkit REQUIRED)
 
